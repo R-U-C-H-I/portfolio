@@ -1,233 +1,40 @@
+<!DOCTYPE html>
 <html  lang="en">
 <head>
 <title>portfolio project</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta http-equiv="X-UA-Compatiable" content="IE=edge">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<style>
-#menu
-{
-height:50px;
-width:400px;
-border:1px solid black;
-background-color:white;
-border-radius:20px 20px 0px 0px;
-margin-top:2%;
-margin-left:60%;
-background-color:#ECAD07;
-}
-#menu ul
-{
-list-style-type:none;
-}
-#menu ul li
-{
-display:inline;
-padding:10px;
-}
-#menu ul li a 
-{font-weight:bold;
-color:black;
-text-decoration:none;
-
-}
-#menu ul li a:hover
-{
-color:red;
-}
-#portfolio
-{
-height:150px;
-weight:1000px;
-border:1px solid black;
-background-color:white;
-margin-top:1%;
-border-radius:20px 20px 0px 0px;
-}
-#header-title
-{width:290px;
-height:130px;
-margin-top:0;
-margin-left:40%;
-border:1px solid transparant;
-
-}
-#logo1
-{height:130px;
-width:130px;
-border:1px solid transparant;
-float:left;
-margin-left:2%;
-
-}
-
-#logo2
-{height:130px;
-width:130px;
-border:1px solid transparant;
-float:right;
-margin-right:3%;
-
-}
-#about
-{
-height:160px;
-width:500px;
-border:1px solid black;
-margin-top:0%;
-margin-left:30%;
-border-radius:20px 20px 20px 20px;
-background-color:white;
-box-shadow: 10px 10px 15px yellow;
-  background-color:gray;
-}
-
-#avatar
-{height:95px;
-width:90px;
-border:1px solid black;
- display: block;
- margin-top:1%;
-  margin-left:43%;
-
-}
-#info { 
-    margin: auto;
-	margin-top:2%;
-margin-left:2%;
-border:1px solid black;
-background-color:#ECA607;
-height:140px;
-width:480px;
-border-radius:20px 20px 20px 20px;
- }
- #project
-{
-height:400px;
-width:1500px;
-border:1px solid black;
-margin-top:2%;
-background-color:lightgray;
-}
-.project_boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
- }
- .project_ele img {
-    flex-basis: 250px;
-    margin-top: 5%;
-    border: 2px solid black;
-    box-shadow: 5px 10px 8px yellow;
-    padding: 5px;
-    position: relative;
-	margin-left:20%;
-    border-radius: 15px;
-   }
- .word {
-    font-size:20px;
-	margin-top:2%;
-	margin-left:20%;
-    font-family: Dancing Script OT;
-    color : rgb(60, 20, 30);
-    font-weight: bolder;
- }
- .link {
-    text-decoration: none;
-    font-size:20px;
-    color: rgb(20, 20, 100);
-    padding-top: 5px;
- }
- .link a:hover
-{
-color:red;
-}
- .projects h2 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 55px;
-    color: rgb(66, 52, 55);
- }
-#contact
-{background-color:#CDECD8;
-height:200px;
-width:1500px;
-border:1px solid black;
-margin-top:2%;
-}
-img,embed,object,video
-{
-max-width:100%;
-}
-nav a,button
-{
-min-width:50px;
-min-height:50px;
-}
-.header_inner
-{
-width:100%;
-margin-left:auto;
-margin-right:auto;
-}
-.nav
-{width:100%;
-margin-left:auto;
-margin-right:auto;
-}
-/*most laptops and desktops*/
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .about {background-color: #FFCC60;}
-  .info {background-color: #FFCC60;}
-  .portfolio {background-color: #FFCC60 ;}
-}
-/*most tablets, iPad (Portrait)*/
-@media screen and (max-width: 1024px) {
-  .about {background-color: #FC8BF6  ;}
-  .portfolio {background-color: #FC8BF6  ;}
-  .contact{background-color: #FC8BF6  ;}
-  .info {background-color: #FC8BF6  ;}
-}
-/*most tablets and iPad (landscape)*/
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-  .about {background-color: #95F730  ;}
-  .portfolio {background-color:#95F730;}
-  .contact{background-color:#95F730;}
-  .info{background-color: #95F730  ;}
-}
-/*most smartphones*/
-@media screen and (max-width: 480px) {
-  body {font-size: 13px; background-color: #60E3FF;}
-  .about {background-color: #60E3FF;}
-  .portfolio {background-color: #60E3FF;}
-  .contact {background-color: #60E3FF;}
-  .work-sample-main{padding-top: 2vh; flex-direction: column; justify-content: center;}
-  .img{min-width: 90%; padding-top: 1vh;}
-  .main {min-width: 90%; padding-top: 1vh;}
-  .info {background-color: #60E3FF;}
-}
+	
+	
 
 
-	</style>
+	
 </head>
 
 <body bgcolor="black">
+<div class="flex-container">
+<div id="slider">
 <header class="header">
 <div class="header_inner">
 <div id="menu">
 	     <ul>
-		     <li><a href="#">HOME</a></li>
+		     <li><a href="#" class="active">HOME</a></li>
 		     <li><a href="#about">ABOUT</a></li>
 		     <li><a href="#project">PROJECT</a></li>
 		     <li><a href="#contact">CONTACT</a></li>
          	</ul> 
-</diV>
+</div>
 </div>
 </header>
+</div>
+<div class="container">
+<div id="slider">
  <nav id="drawer" class="nav">
+ 
       <div id="portfolio">
 	  <ul>
 	  
@@ -238,19 +45,20 @@ margin-right:auto;
           <img src="logo2.png">
 		   </div>
         <div id="header-title">
-        <h1>RUCHI MISHRA</h1>
-        <h2>Front-end Web developer</h2>
+        <center><h1>RUCHI MISHRA</h1>
+        <h2>Front-end Web developer</h2></center>
            </div>
 	        
 </ul>
  
-	 
-  </div>
+	</div> 
+  
   <div id="avatar">
   <center><img src="ruchi.jpg"></center>
   </div>
   </nav>
   
+  </div>
   <section id="about">
   <div id="info">
   <p> I am Ruchi Mishra from varanasi.currently I am persuing Btech in IT from UCER , Allahabad
@@ -259,15 +67,19 @@ margin-right:auto;
       thanks</p>
   
   </div>
+ 
   </section>
-  <section id="project">
-   
+   </div>
+  </div>
+  <div class="container">
+  <section id="project">  
             <div class="project_boxes">
                 <div class="project_ele" >
                     <img src="animal.png" height="300px">
                     <div class="word">Animal Trading Card</div>
                     <a class="link"href="https://codepen.io/r-u-c-h-i/full/NMwXLR/"target="_blank">https://codepen.io/r-u-c-h-i/full/NMwXLR/</a>
                 </div>
+				
                 <div class="project_ele">
                        <img src="pixel.png" height="300px" width="300px">
                         <div class="word">Pixel Art Maker</div>
@@ -279,8 +91,12 @@ margin-right:auto;
                         <a class="link"href="file:///C:/Users/mishr/Documents/GitHub/portfolio-site/gadget%20feature/gadget.html"target="_blank">file:///C:/Users/mishr/Documents/GitHub/portfolio-site/gadget%20feature/gadget.html</a>
                 </div>
             </div>
+						
   </section>
+  </div>
+  
   <footer>
+  
   <div id="contact">
   <center><h1>Contact Me Here!<h1></center>
   <center> <a href="mishraruchi0611@gmail.com">mishraruchi0611@gmail.com</a><br>
@@ -288,6 +104,9 @@ margin-right:auto;
    <a class="linkedin" href="https://www.linkedin.com/in/ruchi-mishra-41a239164/" data-username="ruchi mishra"target="_blank">LinkedIn</a>
   
   </div>
+  
   </footer>
+  
+  
 </body>
 </html>
